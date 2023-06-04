@@ -98,3 +98,9 @@
     background-color: $hover-green-color;
   }
 }
+
+@media (max-width: 425px) {
+  .contact__form-button {
+    width: 100%;
+  }
+}
