@@ -1,0 +1,115 @@
+.header {
+  width: 100%;
+  background-color: $main-black-color;
+
+  &__top {
+    width: 100%;
+    background-color: rgba($main-white-color, 0.2);
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 2.4rem;
+      @include set-header-footer-width;
+      padding-top: 0.4rem;
+      padding-bottom: 0.4rem;
+    }
+  }
+
+  &__temperature {
+    color: $main-white-color;
+  }
+
+  &__language {
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      color: $main-white-color;
+    }
+
+    &:hover,
+    &:active {
+      color: $main-gold-color;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include set-header-footer-width;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+
+  &__logo {
+    cursor: pointer;
+    display: block;
+    // width: 100%;
+    &-img {
+      // width: 32rem;
+      //
+      width: 40%;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    // width: 100%;
+    // background-color: $main-black-color;
+
+    &__top {
+      // width: 100%;
+      // background-color: rgba($main-white-color, 0.2);
+
+      &-wrapper {
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // gap: 2.4rem;
+        // @include set-header-footer-width;
+        // padding-top: 0.4rem;
+        // padding-bottom: 0.4rem;
+      }
+    }
+
+    &__temperature {
+      // color: $main-white-color;
+    }
+
+    &__language {
+      // &:link,
+      // &:visited {
+      //   text-transform: uppercase;
+      //   color: $main-white-color;
+      // }
+
+      // &:hover,
+      // &:active {
+      //   color: $main-gold-color;
+      // }
+    }
+
+    &__bottom {
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
+      // @include set-header-footer-width;
+      // padding-top: 0.8rem;
+      // padding-bottom: 0.8rem;
+    }
+
+    &__logo {
+      // cursor: pointer;
+      // display: block;
+      // width: 100%;
+      &-img {
+        // width: 32rem;
+        //
+        width: 60%;
+      }
+    }
+  }
+}

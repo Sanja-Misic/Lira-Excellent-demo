@@ -1,0 +1,36 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  place-items: center;
+  background-color: $main-black-color;
+
+  &-item {
+    width: 5.6rem;
+    height: 5.6rem;
+    border: 0.4rem solid rgba($main-gold-color, 0.5);
+    border-radius: 50%;
+    border-top-color: $main-gold-color;
+    animation: spin 0.3s linear infinite;
+  }
+}
+
+.preloader-hide {
+  animation: fade 1s forwards;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

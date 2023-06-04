@@ -1,0 +1,100 @@
+//sredi ih kao linkove link active, visited hover vidi koji je redosled
+.cta-button {
+  &:link,
+  &:visited {
+    padding: 1.6rem 1.6rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: $main-white-color;
+    background-color: $main-gold-color;
+    border-radius: 3rem;
+    width: max-content;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $hover-gold-color;
+  }
+}
+
+.hero-button {
+  &:link,
+  &:visited {
+    padding: 1.6rem 3.2rem;
+    font-size: 1.6rem;
+    width: fit-content;
+    text-transform: uppercase;
+    color: $main-white-color;
+    background-color: $main-green-color;
+    border-radius: 3rem;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $hover-green-color;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-button {
+    &:link,
+    &:visited {
+      // padding: 1.6rem 3.2rem;
+      font-size: 1.3rem;
+      // border-radius: 3rem;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .hero-button {
+    &:link,
+    &:visited {
+      width: 100%;
+    }
+  }
+}
+
+.footer__btn {
+  &:link,
+  &:visited {
+    padding: 0rem 0.8rem;
+    font-size: 1.3rem;
+    color: $main-white-color;
+    background-color: $main-gold-color;
+    border-radius: 3rem;
+    transform: translateX(-0.8rem);
+  }
+
+  &:hover,
+  &:active {
+    background-color: $hover-gold-color;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer__btn {
+    &:link,
+    &:visited {
+      // padding: 0rem 0.8rem;
+      // font-size: 1.3rem;
+      // color: $main-white-color;
+      // background-color: $main-gold-color;
+      // border-radius: 3rem;
+      transform: translateX(0rem);
+    }
+  }
+}
+
+.contact__form-button {
+  padding: 1.6rem 3.2rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: $main-white-color;
+  background-color: $main-green-color;
+  border-radius: 3rem;
+  width: fit-content;
+
+  &:hover {
+    background-color: $hover-green-color;
+  }
+}

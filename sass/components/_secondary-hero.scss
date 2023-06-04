@@ -1,0 +1,15 @@
+.secondary-hero {
+  &__img {
+    width: 100%;
+    height: 55vh;
+    background-size: cover;
+  }
+
+  &__heading {
+    @include set-section-width;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+  }
+}

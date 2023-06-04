@@ -1,0 +1,13 @@
+@mixin set-section-width {
+  max-width: 128rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+@mixin set-header-footer-width {
+  max-width: 144rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+}

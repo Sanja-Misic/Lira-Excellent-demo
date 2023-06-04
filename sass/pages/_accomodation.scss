@@ -1,0 +1,180 @@
+.accomodation-hero__img {
+  background-image: url(../img/accomodation/accomodation-hero.png);
+}
+
+// .accomodation-about {
+//   opacity: 1;
+//   transition: opacity 5s;
+// }
+.accomodation-about-hidden {
+  opacity: 0;
+  display: none;
+}
+
+.rooms {
+  @include set-section-width;
+  margin-bottom: $margin-bottom-section;
+  grid-template-columns: 65% 35%;
+  display: none;
+  opacity: 0;
+  // transition: opacity 5s;
+
+  &-show {
+    opacity: 1;
+    display: grid;
+  }
+
+  &-without-mark {
+    grid-template-columns: 100% 0%;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin-right: 3.4rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.6rem;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    &-icon {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+    &-text {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__price-cta {
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+    // margin-bottom: 3.2rem;
+  }
+
+  &__imgs-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    width: 100%;
+    height: 30rem;
+    // aspect-ratio: 1/1;
+  }
+
+  &__mark {
+    background-color: $main-black-color;
+    color: $main-white-color;
+    text-align: center;
+
+    padding: 3.2rem 3.2rem;
+
+    &-heading {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+
+    &-name {
+      font-size: 2rem;
+      margin-bottom: 2.4rem;
+    }
+    &-img {
+      width: 100%;
+      margin-bottom: 2.4rem;
+    }
+
+    &-paragraph {
+      font-size: 1.6rem;
+      margin-bottom: 3.2rem;
+    }
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      &-item {
+        display: flex;
+        gap: 0.8rem;
+        width: calc(50% - 0.4rem);
+      }
+      &-icon {
+        fill: $main-white-color;
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+
+      &-text {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+.accomodation-studio {
+  @include set-section-width;
+  margin-bottom: $margin-bottom-section;
+  display: none;
+  opacity: 0;
+
+  &-show {
+    opacity: 1;
+    display: block;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &__imgs {
+    display: flex;
+    &-item {
+      width: 50%;
+      position: relative;
+
+      &:not(:last-child) {
+        border-right: 3px solid $main-white-color;
+      }
+    }
+    &-text {
+      padding: 1.6rem;
+      font-size: 2rem;
+      font-weight: 600;
+      color: $main-white-color;
+      background-color: $main-gold-color;
+      box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 10px 0px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &-img {
+      width: 100%;
+      z-index: -1;
+      // height: 40rem;
+    }
+  }
+}
+
+.accomodation-info {
+  @include set-section-width;
+  margin-bottom: $margin-bottom-section;
+
+  &-item {
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import 'abstracts/variables';
+// @import 'abstracts/functions';
+@import 'abstracts/mixins';
+// @import 'abstracts/placeholders';
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/navigation';
+// @import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+// @import 'layout/sidebar';
+@import 'layout/forms';
+
+@import 'components/buttons';
+@import 'components/gallery';
+@import 'components/heading-secondary';
+@import 'components/media';
+@import 'components/preloader';
+@import 'components/secondary-hero';
+@import 'components/secondary-about';
+
+@import 'pages/home';
+@import 'pages/contacts';
+@import 'pages/restaurant';
+@import 'pages/accomodation';
