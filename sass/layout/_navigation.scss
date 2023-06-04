@@ -98,6 +98,7 @@
 .secondary-nav {
   @include set-section-width;
   display: flex;
+  flex-wrap: wrap;
   gap: 2.4rem;
   justify-content: center;
   align-items: center;
@@ -109,6 +110,47 @@
 
     &:hover {
       color: $main-gold-color;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .secondary-nav {
+    // @include set-section-width;
+    // display: flex;
+
+    // gap: 2.4rem;
+    // justify-content: center;
+    // align-items: center;
+    // transform: translateY(-11.2rem);
+
+    &-item {
+      // color: $main-black-color;
+      // font-size: 1.6rem;
+
+      // &:hover {
+      //   color: $main-gold-color;
+      // }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .secondary-nav {
+    // @include set-section-width;
+    // display: flex;
+    gap: 1.6rem;
+    // justify-content: center;
+    // align-items: center;
+    // transform: translateY(-11.2rem);
+
+    &-item {
+      // color: $main-black-color;
+      // font-size: 1.6rem;
+
+      // &:hover {
+      //   color: $main-gold-color;
+      // }
     }
   }
 }

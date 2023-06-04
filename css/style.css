@@ -45,11 +45,6 @@ body {
     font-size: 1.3rem;
   }
 }
-@media (max-width: 768px) {
-  body {
-    font-size: 1rem;
-  }
-}
 button {
   font-family: inherit;
 }
@@ -187,6 +182,7 @@ button {
   margin: 0 auto;
   padding: 0 3rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 2.4rem;
   justify-content: center;
   align-items: center;
@@ -200,6 +196,11 @@ button {
   color: #b09e80;
 }
 
+@media (max-width: 768px) {
+  .secondary-nav {
+    gap: 1.6rem;
+  }
+}
 .header {
   width: 100%;
   background-color: #22211f;
@@ -611,7 +612,7 @@ button {
 .secondary-about__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 1.6rem;
+  gap: 1.6rem;
 }
 .secondary-about__list-item {
   display: flex;
@@ -621,6 +622,23 @@ button {
 .secondary-about__list-icon {
   width: 2.4rem;
   height: 2.4rem;
+}
+@media (max-width: 1024px) {
+  .secondary-about {
+    flex-direction: column;
+  }
+  .secondary-about__img {
+    width: 100%;
+    order: 2;
+  }
+  .secondary-about__text {
+    width: 100%;
+  }
+}
+@media (max-width: 530px) {
+  .secondary-about__list {
+    grid-template-columns: 1fr;
+  }
 }
 .home-hero {
   width: 100%;
@@ -1053,6 +1071,17 @@ button {
   width: 50%;
 }
 
+@media (max-width: 1024px) {
+  .restaurant-events {
+    flex-direction: column;
+  }
+  .restaurant-events__text {
+    width: 100%;
+  }
+  .restaurant-events__img {
+    width: 100%;
+  }
+}
 .accomodation-hero__img {
   background-image: url(../img/accomodation/accomodation-hero.png);
 }
@@ -1084,24 +1113,6 @@ button {
   flex-direction: column;
   gap: 3.2rem;
   margin-right: 3.4rem;
-}
-.rooms__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1.6rem;
-}
-.rooms__list-item {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-}
-.rooms__list-icon {
-  width: 2.4rem;
-  height: 2.4rem;
-}
-.rooms__list-text {
-  font-size: 1.3rem;
 }
 .rooms__price-cta {
   display: flex;
@@ -1212,4 +1223,23 @@ button {
 }
 .accomodation-info-item:not(:last-child) {
   margin-bottom: 1.6rem;
+}
+
+@media (max-width: 1024px) {
+  .rooms {
+    grid-template-columns: 100%;
+  }
+  .rooms__wrapper {
+    margin-right: 0;
+    margin-bottom: 3.2rem;
+  }
+  .accomodation-studio__imgs {
+    flex-direction: column;
+  }
+  .accomodation-studio__imgs-item {
+    width: 100%;
+  }
+  .accomodation-studio__imgs-item:not(:last-child) {
+    border-right: none;
+  }
 }/*# sourceMappingURL=style.css.map */
