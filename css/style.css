@@ -786,9 +786,11 @@ button {
   align-items: center;
   border-radius: 3rem;
   cursor: pointer;
+  color: #22211f;
 }
 .offer__cards-item:hover {
-  transform: translateY(-5%);
+  background-color: rgba(34, 33, 31, 0.04);
+  transform: translateY(-4%);
 }
 .offer__cards-icon-wrapper {
   width: 8rem;
