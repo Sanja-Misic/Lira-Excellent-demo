@@ -594,14 +594,14 @@
         // box-shadow: inset 0em 0em 0em 0.8rem $main-gold-color;
       }
 
-      // &:hover .turists__item-img {
-      //   border: 0.8rem solid $main-gold-color;
-      //   border-right: none;
-      // }
-      // &:hover .turists__item-img--left {
-      //   border: 0.8rem solid $main-gold-color;
-      //   border-left: none;
-      // }
+      &:hover .turists__item-img {
+        border: 0.8rem solid $main-gold-color;
+        border-bottom: none;
+      }
+      &:hover .turists__item-img--left {
+        border: 0.8rem solid $main-gold-color;
+        border-bottom: none;
+      }
 
       &-img {
         order: -1;

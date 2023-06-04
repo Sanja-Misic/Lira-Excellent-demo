@@ -850,6 +850,14 @@ button {
   .turists__item {
     flex-direction: column;
   }
+  .turists__item:hover .turists__item-img {
+    border: 0.8rem solid #b09e80;
+    border-bottom: none;
+  }
+  .turists__item:hover .turists__item-img--left {
+    border: 0.8rem solid #b09e80;
+    border-bottom: none;
+  }
   .turists__item-img {
     order: -1;
   }
