@@ -681,6 +681,7 @@ button {
   width: 2.4rem;
   height: 2.4rem;
 }
+
 @media (max-width: 1024px) {
   .secondary-about {
     flex-direction: column;
@@ -961,12 +962,6 @@ button {
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 }
-@media (max-width: 425px) {
-  .offer__list-icon {
-    width: 1.6rem;
-    height: 1.6rem;
-  }
-}
 .turists {
   max-width: 128rem;
   width: 100%;
@@ -1031,6 +1026,7 @@ button {
   gap: 3.2rem;
   padding: 0 3.2rem;
 }
+
 @media (max-width: 1024px) {
   .turists__wrapper {
     grid-template-columns: 100%;
