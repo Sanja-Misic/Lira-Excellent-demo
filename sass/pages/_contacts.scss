@@ -7,7 +7,7 @@
   display: flex;
   gap: 4.8rem;
   align-items: center;
-  margin-bottom: $margin-bottom-section;
+  @include margin-bottom-section;
 
   &__item {
     width: 50%;

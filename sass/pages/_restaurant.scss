@@ -7,7 +7,7 @@
   align-items: center;
   gap: 4.8rem;
   @include set-section-width;
-  margin-bottom: $margin-bottom-section;
+  @include margin-bottom-section;
 
   &__text {
     width: 50%;

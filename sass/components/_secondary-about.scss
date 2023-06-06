@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   gap: 4.8rem;
-  margin-bottom: $margin-bottom-section;
+  @include margin-bottom-section;
 
   &__img {
     width: 50%;

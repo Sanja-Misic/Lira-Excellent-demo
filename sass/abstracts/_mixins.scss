@@ -11,3 +11,23 @@
   margin: 0 auto;
   padding: 0 3rem;
 }
+
+@mixin margin-bottom-section {
+  margin-bottom: 16.8rem;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 13.6rem;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 12rem;
+  }
+
+  @media (max-width: 530px) {
+    margin-bottom: 10.4rem;
+  }
+
+  @media (max-width: 420px) {
+    margin-bottom: 10.4rem;
+  }
+}

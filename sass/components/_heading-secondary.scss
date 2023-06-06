@@ -11,3 +11,9 @@
   margin-top: 1.6rem;
   background-color: $main-gold-color;
 }
+
+@media (max-width: 1024px) {
+  .heading-secondary-wrapper {
+    margin-bottom: 6.4rem;
+  }
+}

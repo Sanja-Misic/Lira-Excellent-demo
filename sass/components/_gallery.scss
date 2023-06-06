@@ -1,6 +1,6 @@
 .gallery {
   @include set-section-width;
-  margin-bottom: $margin-bottom-section;
+  @include margin-bottom-section;
 
   &-heading {
     text-align: center;

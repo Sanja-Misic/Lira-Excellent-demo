@@ -69,16 +69,19 @@ button {
   font-size: 2.4rem;
   font-weight: 600;
 }
-// zemeni sa heading 4 npr
-.offer__cards-text {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 600;
-}
 
 .heading-fourth {
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
   // padding: 2rem;
+}
+
+@media (max-width: 530px) {
+  .heading-fourth {
+    // text-align: center;
+    font-size: 1.6rem;
+    // font-weight: 600;
+    // // padding: 2rem;
+  }
 }
