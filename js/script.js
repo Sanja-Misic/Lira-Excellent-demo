@@ -9,6 +9,25 @@ const hideloader = () => {
 
 window.addEventListener('load', hideloader);
 
+// MOB MENY FUNCTIONALITY
+const mobMenyBtn = document.querySelector('.mob-navigation-icon');
+const mobCloseBtn = document.querySelector('.mob-navigation-close');
+const mobNavContainer = document.querySelector('.mob-navigation');
+const body = document.querySelector('body');
+const html = document.querySelector('html');
+
+mobMenyBtn.addEventListener('click', function () {
+  mobNavContainer.classList.add('mob-navigation-show');
+  body.classList.add('u-hidden-overflow');
+  html.classList.add('u-hidden-overflow');
+});
+
+mobCloseBtn.addEventListener('click', function () {
+  mobNavContainer.classList.remove('mob-navigation-show');
+  body.classList.remove('u-hidden-overflow');
+  html.classList.remove('u-hidden-overflow');
+});
+
 // ACCOMODATION FUNCIONALITY
 const doubleRoomBtn = document.querySelector('.double-room');
 const tripleRoomBtn = document.querySelector('.triple-room');
