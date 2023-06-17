@@ -1,6 +1,17 @@
 .header {
   width: 100%;
   background-color: $main-black-color;
+  // animation: name duration timing-function delay iteration-count direction fill-mode;
+  // transition: all 0.3s;
+  color: $main-white-color;
+
+  &-sticky {
+    position: fixed;
+    top: 0;
+    color: $main-black-color;
+    background-color: rgb($main-black-color, 0.85);
+    background-color: rgb($main-white-color, 0.9);
+  }
 
   &__top {
     width: 100%;
@@ -17,15 +28,18 @@
     }
   }
 
-  &__temperature {
-    color: $main-white-color;
-  }
-
   &__language {
     &:link,
     &:visited {
       text-transform: uppercase;
       color: $main-white-color;
+    }
+
+    &-sticky {
+      &:link,
+      &:visited {
+        color: $main-black-color;
+      }
     }
 
     &:hover,

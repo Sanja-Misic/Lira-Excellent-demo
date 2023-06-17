@@ -16,6 +16,10 @@
     text-transform: uppercase;
     color: $main-white-color;
 
+    &-sticky {
+      color: $main-black-color;
+    }
+
     &:not(:last-child) {
       border-right: 2px solid $main-gold-color;
     }

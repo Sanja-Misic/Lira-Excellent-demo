@@ -127,6 +127,9 @@ button {
   text-transform: uppercase;
   color: #fefcf8;
 }
+.navigation-item-sticky {
+  color: #22211f;
+}
 .navigation-item:not(:last-child) {
   border-right: 2px solid #b09e80;
 }
@@ -222,6 +225,14 @@ button {
 .header {
   width: 100%;
   background-color: #22211f;
+  color: #fefcf8;
+}
+.header-sticky {
+  position: fixed;
+  top: 0;
+  color: #22211f;
+  background-color: rgba(34, 33, 31, 0.85);
+  background-color: rgba(254, 252, 248, 0.9);
 }
 .header__top {
   width: 100%;
@@ -239,12 +250,12 @@ button {
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
 }
-.header__temperature {
-  color: #fefcf8;
-}
 .header__language:link, .header__language:visited {
   text-transform: uppercase;
   color: #fefcf8;
+}
+.header__language-sticky:link, .header__language-sticky:visited {
+  color: #22211f;
 }
 .header__language:hover, .header__language:active {
   color: #b09e80;

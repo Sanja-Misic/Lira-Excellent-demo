@@ -28,6 +28,69 @@ mobCloseBtn.addEventListener('click', function () {
   html.classList.remove('u-hidden-overflow');
 });
 
+//STICKY HEADER
+// const section1 = document.querySelector('.home-about-us');
+// const headerContainer = document.querySelector('.header');
+
+// const initialCoords = section1.getBoundingClientRect();
+// console.log(initialCoords);
+
+// window.addEventListener('scroll', function () {
+//   if (window.scrollY > initialCoords.top)
+//     headerContainer.classList.add('header-sticky');
+//   else headerContainer.classList.remove('header-sticky');
+// });
+
+const header = document.querySelector('.header');
+
+const sectionHero = document.querySelector('.hero');
+const headerHeight = header.getBoundingClientRect().height;
+
+const navItemsColor = document.querySelectorAll('.navigation-item');
+const languageColor = document.querySelector('.header__language');
+let logoImg = document.querySelector('.header__logo-img');
+// logoImg.src = './img/logo-header-sticky.png';
+console.log(logoImg.src);
+
+const stickyNav = function (entries) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) {
+    header.classList.add('header-sticky');
+    navItemsColor.forEach(item => item.classList.add('navigation-item-sticky'));
+    languageColor.classList.add('header__language-sticky');
+
+    if (body.id === 'home') {
+      logoImg.src = './img/logo-header-sticky.png';
+    } else {
+      logoImg.src = '../img/logo-header-sticky.png';
+    }
+    sectionHero.style.marginTop = headerHeight + 'px';
+  } else if (entry.isIntersecting) {
+    header.classList.remove('header-sticky');
+    navItemsColor.forEach(item =>
+      item.classList.remove('navigation-item-sticky')
+    );
+    languageColor.classList.remove('header__language-sticky');
+
+    if (body.id === 'home') {
+      logoImg.src = './img/logo-header.png';
+    } else {
+      logoImg.src = '../img/logo-header.png';
+    }
+
+    sectionHero.style.marginTop = '0px';
+  }
+};
+
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${headerHeight}px`,
+});
+
+headerObserver.observe(sectionHero);
+
 // ACCOMODATION FUNCIONALITY
 const doubleRoomBtn = document.querySelector('.double-room');
 const tripleRoomBtn = document.querySelector('.triple-room');
