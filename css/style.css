@@ -505,7 +505,7 @@ button {
   }
 }
 .back-to-top-btn {
-  display: none;
+  display: grid;
   place-items: center;
   position: fixed;
   bottom: 2.4rem;
@@ -513,14 +513,18 @@ button {
   width: 5.6rem;
   height: 5.6rem;
   border-radius: 30rem;
+  opacity: 0;
+  visibility: hidden;
   background-color: #fefcf8;
   border: 2px solid #b09e80;
+  transition: all 0.1s;
 }
 .back-to-top-btn:hover {
   background-color: rgba(176, 158, 128, 0.2);
 }
 .back-to-top-btn-show {
-  display: grid;
+  visibility: visible;
+  opacity: 1;
 }
 .back-to-top-btn-icon {
   width: 3.2rem;
