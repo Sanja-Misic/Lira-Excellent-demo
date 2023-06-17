@@ -138,6 +138,8 @@ roomBtns.forEach(btn => {
         container.classList.remove('rooms-show');
       });
 
+      studioRoomContainer.classList.remove('accomodation-studio-show');
+
       switch (btn) {
         case doubleRoomBtn:
           doubleRoomContainer.classList.add('rooms-show');
