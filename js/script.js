@@ -59,8 +59,10 @@ const stickyNav = function (entries) {
     header.classList.add('header-sticky');
     navItemsColor.forEach(item => item.classList.add('navigation-item-sticky'));
     languageColor.classList.add('header__language-sticky');
-    mobNavIconColor.classList.add('mob-navigation-icon-shape-sticky');
 
+    if (mobNavIconColor !== null) {
+      mobNavIconColor.classList.add('mob-navigation-icon-shape-sticky');
+    }
     if (body.id === 'home') {
       logoImg.src = './img/logo-header-sticky.png';
     } else {
@@ -73,7 +75,9 @@ const stickyNav = function (entries) {
       item.classList.remove('navigation-item-sticky')
     );
     languageColor.classList.remove('header__language-sticky');
-    mobNavIconColor.classList.remove('mob-navigation-icon-shape-sticky');
+    if (mobNavIconColor !== null) {
+      mobNavIconColor.classList.remove('mob-navigation-icon-shape-sticky');
+    }
 
     if (body.id === 'home') {
       logoImg.src = './img/logo-header.png';
