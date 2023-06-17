@@ -261,6 +261,7 @@
   &__item {
     display: flex;
     cursor: pointer;
+    color: $main-black-color;
 
     &:nth-child(1),
     &:nth-child(4),

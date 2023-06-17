@@ -1053,6 +1053,7 @@ button {
 .turists__item {
   display: flex;
   cursor: pointer;
+  color: #22211f;
 }
 .turists__item:nth-child(1), .turists__item:nth-child(4), .turists__item:nth-child(5) {
   background-color: rgba(193, 176, 148, 0.5647058824);
