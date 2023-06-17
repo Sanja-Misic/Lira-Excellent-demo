@@ -151,9 +151,14 @@ button {
   }
 }
 .mob-navigation-icon {
-  fill: #fefcf8;
   display: none;
   width: 5.6rem;
+}
+.mob-navigation-icon-shape {
+  fill: #fefcf8;
+}
+.mob-navigation-icon-shape-sticky {
+  fill: #22211f;
 }
 
 @media (max-width: 1024px) {

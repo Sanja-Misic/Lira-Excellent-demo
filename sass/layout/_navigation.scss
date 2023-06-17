@@ -47,9 +47,16 @@
 }
 
 .mob-navigation-icon {
-  fill: $main-white-color;
   display: none;
   width: 5.6rem;
+
+  &-shape {
+    fill: $main-white-color;
+
+    &-sticky {
+      fill: $main-black-color;
+    }
+  }
 }
 
 @media (max-width: 1024px) {

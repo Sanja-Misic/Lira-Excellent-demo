@@ -49,8 +49,8 @@ const headerHeight = header.getBoundingClientRect().height;
 const navItemsColor = document.querySelectorAll('.navigation-item');
 const languageColor = document.querySelector('.header__language');
 let logoImg = document.querySelector('.header__logo-img');
-// logoImg.src = './img/logo-header-sticky.png';
-console.log(logoImg.src);
+
+const mobNavIconColor = document.querySelector('.mob-navigation-icon-shape');
 
 const stickyNav = function (entries) {
   const [entry] = entries;
@@ -59,6 +59,7 @@ const stickyNav = function (entries) {
     header.classList.add('header-sticky');
     navItemsColor.forEach(item => item.classList.add('navigation-item-sticky'));
     languageColor.classList.add('header__language-sticky');
+    mobNavIconColor.classList.add('mob-navigation-icon-shape-sticky');
 
     if (body.id === 'home') {
       logoImg.src = './img/logo-header-sticky.png';
@@ -72,6 +73,7 @@ const stickyNav = function (entries) {
       item.classList.remove('navigation-item-sticky')
     );
     languageColor.classList.remove('header__language-sticky');
+    mobNavIconColor.classList.remove('mob-navigation-icon-shape-sticky');
 
     if (body.id === 'home') {
       logoImg.src = './img/logo-header.png';
