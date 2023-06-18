@@ -153,9 +153,14 @@
   &-item {
     color: $main-black-color;
     font-size: 1.6rem;
+    padding: 0.4rem;
 
     &:hover {
       color: $main-gold-color;
+    }
+
+    &-clicked {
+      border: 2px solid $main-gold-color;
     }
   }
 }

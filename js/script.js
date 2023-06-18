@@ -29,18 +29,6 @@ mobCloseBtn.addEventListener('click', function () {
 });
 
 //STICKY HEADER
-// const section1 = document.querySelector('.home-about-us');
-// const headerContainer = document.querySelector('.header');
-
-// const initialCoords = section1.getBoundingClientRect();
-// console.log(initialCoords);
-
-// window.addEventListener('scroll', function () {
-//   if (window.scrollY > initialCoords.top)
-//     headerContainer.classList.add('header-sticky');
-//   else headerContainer.classList.remove('header-sticky');
-// });
-
 const header = document.querySelector('.header');
 
 const sectionHero = document.querySelector('.hero');
@@ -130,31 +118,40 @@ const roomContainers = [
 roomBtns.forEach(btn => {
   if (btn !== null) {
     btn.addEventListener('click', function () {
-      console.log('radi');
       accomodationContainer.classList.add('accomodation-about-hidden');
+      studioRoomContainer.classList.remove('accomodation-studio-show');
+
+      roomBtns.forEach(otherBtn => {
+        if (otherBtn !== btn) {
+          otherBtn.classList.remove('secondary-nav-item-clicked');
+        }
+      });
 
       roomContainers.forEach(container => {
         console.log(container);
         container.classList.remove('rooms-show');
       });
 
-      studioRoomContainer.classList.remove('accomodation-studio-show');
-
       switch (btn) {
         case doubleRoomBtn:
           doubleRoomContainer.classList.add('rooms-show');
+          btn.classList.add('secondary-nav-item-clicked');
           break;
         case tripleRoomBtn:
           tripleRoomContainer.classList.add('rooms-show');
+          btn.classList.add('secondary-nav-item-clicked');
           break;
         case fourRoomBtn:
           fourRoomContainer.classList.add('rooms-show');
+          btn.classList.add('secondary-nav-item-clicked');
           break;
         case fiveRoomBtn:
           fiveRoomContainer.classList.add('rooms-show');
+          btn.classList.add('secondary-nav-item-clicked');
           break;
         case studioRoomBtn:
           studioRoomContainer.classList.add('accomodation-studio-show');
+          btn.classList.add('secondary-nav-item-clicked');
           break;
       }
     });

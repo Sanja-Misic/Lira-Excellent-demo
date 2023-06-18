@@ -229,9 +229,13 @@ button {
 .secondary-nav-item {
   color: #22211f;
   font-size: 1.6rem;
+  padding: 0.4rem;
 }
 .secondary-nav-item:hover {
   color: #b09e80;
+}
+.secondary-nav-item-clicked {
+  border: 2px solid #b09e80;
 }
 
 @media (max-width: 768px) {
