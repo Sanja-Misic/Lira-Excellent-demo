@@ -128,7 +128,6 @@ roomBtns.forEach(btn => {
       });
 
       roomContainers.forEach(container => {
-        console.log(container);
         container.classList.remove('rooms-show');
       });
 
@@ -157,6 +156,112 @@ roomBtns.forEach(btn => {
     });
   }
 });
+
+// ACCOMODATION IMAGES SLIDER
+const nextBtns = document.querySelectorAll('.next');
+const prevBtns = document.querySelectorAll('.prev');
+const nextBtnStudio4 = document.querySelector('.next-btn-studio-4');
+const prevBtnStudio4 = document.querySelector('.prev-btn-studio-4');
+const nextBtnStudio5 = document.querySelector('.next-btn-studio-5');
+const prevBtnStudio5 = document.querySelector('.prev-btn-studio-5');
+const slide12 = document.querySelectorAll('.slide12');
+const slide3 = document.querySelectorAll('.slide3');
+const slide4 = document.querySelectorAll('.slide4');
+const slide5 = document.querySelectorAll('.slide5');
+const slideStudio4 = document.querySelectorAll('.slide-studio-4');
+const slideStudio5 = document.querySelectorAll('.slide-studio-5');
+const sliderDots = document.querySelectorAll('.dot');
+
+let i = 0;
+
+const nextSlide = slide => {
+  for (let j = 0; j < slide.length; j++) {
+    slide[j].classList.remove('slide-active');
+  }
+
+  slide[i].classList.add('slide-active');
+  i++;
+
+  if (i >= slide.length) {
+    i = 0;
+  }
+
+  console.log(i);
+};
+const prevSlide = slide => {
+  for (let j = 0; j < slide.length; j++) {
+    slide[j].classList.remove('slide-active');
+  }
+
+  slide[i].classList.add('slide-active');
+  i--;
+
+  if (i < 0) {
+    i = slide.length - 1;
+  }
+
+  console.log(i);
+};
+
+nextBtns.forEach(btn => {
+  btn.addEventListener('click', function () {
+    if (doubleRoomContainer.classList.contains('rooms-show')) {
+      nextSlide(slide12);
+    } else if (tripleRoomContainer.classList.contains('rooms-show')) {
+      nextSlide(slide3);
+    } else if (fourRoomContainer.classList.contains('rooms-show')) {
+      nextSlide(slide4);
+    } else if (fiveRoomContainer.classList.contains('rooms-show')) {
+      nextSlide(slide5);
+    }
+  });
+});
+prevBtns.forEach(btn => {
+  btn.addEventListener('click', function () {
+    if (doubleRoomContainer.classList.contains('rooms-show')) {
+      prevSlide(slide12);
+    } else if (tripleRoomContainer.classList.contains('rooms-show')) {
+      prevSlide(slide3);
+    } else if (fourRoomContainer.classList.contains('rooms-show')) {
+      prevSlide(slide4);
+    } else if (fiveRoomContainer.classList.contains('rooms-show')) {
+      prevSlide(slide5);
+    }
+  });
+});
+
+prevBtnStudio4.addEventListener('click', function () {
+  prevSlide(slideStudio4);
+});
+nextBtnStudio4.addEventListener('click', function () {
+  nextSlide(slideStudio4);
+});
+prevBtnStudio5.addEventListener('click', function () {
+  prevSlide(slideStudio5);
+});
+nextBtnStudio5.addEventListener('click', function () {
+  nextSlide(slideStudio5);
+});
+
+// console.log();
+// setInterval(function () {
+//   nextSlide(slide12);
+// }, 3000);
+// setInterval(function () {
+//   nextSlide(slide3);
+// }, 3000);
+// setInterval(function () {
+//   nextSlide(slide4);
+// }, 3000);
+// setInterval(function () {
+//   nextSlide(slide5);
+// }, 3000);
+// setInterval(function () {
+//   nextSlide(slideStudio4);
+// }, 4000);
+// setInterval(function () {
+//   nextSlide(slideStudio5);
+// }, 3000);
 
 // BACK TO TOP BUTTON
 const backToTopBtn = document.querySelector('.back-to-top-btn');
