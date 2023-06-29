@@ -24,6 +24,12 @@
     font-size: 1.6rem;
     border: 1px solid $main-black-color;
     background-color: $main-white-color;
+    &:focus {
+      outline: none;
+      border: 2px solid $main-green-color;
+      background-color: transparent;
+      // background-color: rgba($main-gold-color, 0.08);
+    }
   }
 }
 

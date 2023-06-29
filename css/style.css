@@ -416,6 +416,11 @@ button {
   border: 1px solid #22211f;
   background-color: #fefcf8;
 }
+.contact__form-input:focus {
+  outline: none;
+  border: 2px solid #3d5b35;
+  background-color: transparent;
+}
 
 @media (max-width: 1024px) {
   .contact__form {
@@ -682,7 +687,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 45vh;
+  margin-bottom: 6.4rem;
+  padding-top: 5.6rem;
 }
 
 .secondary-about {
