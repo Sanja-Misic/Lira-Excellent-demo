@@ -4,6 +4,7 @@
   // animation: name duration timing-function delay iteration-count direction fill-mode;
   // transition: all 0.3s;
   color: $main-white-color;
+  z-index: 100;
 
   &-sticky {
     position: fixed;
