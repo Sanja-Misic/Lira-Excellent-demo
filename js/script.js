@@ -230,18 +230,19 @@ prevBtns.forEach(btn => {
   });
 });
 
-prevBtnStudio4.addEventListener('click', function () {
-  prevSlide(slideStudio4);
-});
-nextBtnStudio4.addEventListener('click', function () {
-  nextSlide(slideStudio4);
-});
-prevBtnStudio5.addEventListener('click', function () {
-  prevSlide(slideStudio5);
-});
-nextBtnStudio5.addEventListener('click', function () {
-  nextSlide(slideStudio5);
-});
+// /////////////// stavi da ako ta stranica ima show klasu onda ovo
+// prevBtnStudio4.addEventListener('click', function () {
+//   prevSlide(slideStudio4);
+// });
+// nextBtnStudio4.addEventListener('click', function () {
+//   nextSlide(slideStudio4);
+// });
+// prevBtnStudio5.addEventListener('click', function () {
+//   prevSlide(slideStudio5);
+// });
+// nextBtnStudio5.addEventListener('click', function () {
+//   nextSlide(slideStudio5);
+// });
 
 // console.log();
 // setInterval(function () {
@@ -278,3 +279,29 @@ const backToTopHendler = () => {
 
 window.onscroll = backToTopHendler;
 window.onload = backToTopHendler;
+
+// TEMPERATURE API
+const headerTemperature = document.querySelector('.header__temperature');
+
+const lat = 43.3194; // The latitude for the city of Niš
+const lon = 21.8963; // The longitude for the city of Niš
+
+const apiKey = '703ae055c436ad0f46e51092f07227a0';
+
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+
+async function getWeatherData() {
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+
+    const temperature = data.main.temp;
+    const temperatureCelsius = `${(temperature - 273.15).toFixed(0)} °C`;
+
+    headerTemperature.textContent = temperatureCelsius;
+  } catch (error) {
+    console.log('Došlo je do greške pri pozivu API-ja:', error);
+  }
+}
+
+getWeatherData();
