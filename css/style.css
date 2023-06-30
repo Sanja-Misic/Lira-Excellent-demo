@@ -226,6 +226,11 @@ button {
   align-items: center;
   transform: translateY(-11.2rem);
 }
+@media (max-width: 768px) {
+  .secondary-nav {
+    padding: 0 1.6rem;
+  }
+}
 .secondary-nav-item {
   color: #22211f;
   font-size: 1.6rem;
@@ -550,6 +555,11 @@ button {
   padding: 0 3rem;
   margin-bottom: 16.8rem;
 }
+@media (max-width: 768px) {
+  .gallery {
+    padding: 0 1.6rem;
+  }
+}
 @media (max-width: 1024px) {
   .gallery {
     margin-bottom: 13.6rem;
@@ -690,6 +700,11 @@ button {
   margin-bottom: 6.4rem;
   padding-top: 5.6rem;
 }
+@media (max-width: 768px) {
+  .secondary-hero__heading {
+    padding: 0 1.6rem;
+  }
+}
 
 .secondary-about {
   max-width: 128rem;
@@ -700,6 +715,11 @@ button {
   align-items: center;
   gap: 4.8rem;
   margin-bottom: 16.8rem;
+}
+@media (max-width: 768px) {
+  .secondary-about {
+    padding: 0 1.6rem;
+  }
 }
 @media (max-width: 1024px) {
   .secondary-about {
@@ -858,6 +878,11 @@ button {
   display: flex;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .home-hero__wrapper {
+    padding: 0 1.6rem;
+  }
+}
 .home-hero__text-container {
   width: 60%;
 }
@@ -886,9 +911,18 @@ button {
     display: flex;
     align-items: center;
   }
+}
+@media (max-width: 1024px) and (max-width: 768px) {
+  .home-hero__wrapper {
+    padding: 0 1.6rem;
+  }
+}
+@media (max-width: 1024px) {
   .home-hero__text-container {
     width: 80%;
   }
+}
+@media (max-width: 1024px) {
   .home-hero__text {
     font-size: 1.6rem;
   }
@@ -913,6 +947,11 @@ button {
   margin: 0 auto;
   padding: 0 3rem;
   margin-bottom: 16.8rem;
+}
+@media (max-width: 768px) {
+  .home-about-us {
+    padding: 0 1.6rem;
+  }
 }
 @media (max-width: 1024px) {
   .home-about-us {
@@ -973,6 +1012,11 @@ button {
   margin: 0 auto;
   padding: 0 3rem;
   margin-bottom: 16.8rem;
+}
+@media (max-width: 768px) {
+  .offer {
+    padding: 0 1.6rem;
+  }
 }
 @media (max-width: 1024px) {
   .offer {
@@ -1094,6 +1138,11 @@ button {
   padding: 0 3rem;
   margin-bottom: 16.8rem;
 }
+@media (max-width: 768px) {
+  .turists {
+    padding: 0 1.6rem;
+  }
+}
 @media (max-width: 1024px) {
   .turists {
     margin-bottom: 13.6rem;
@@ -1199,6 +1248,11 @@ button {
   align-items: center;
   margin-bottom: 16.8rem;
 }
+@media (max-width: 768px) {
+  .contact {
+    padding: 0 1.6rem;
+  }
+}
 @media (max-width: 1024px) {
   .contact {
     margin-bottom: 13.6rem;
@@ -1272,6 +1326,11 @@ button {
   justify-content: space-between;
   margin-bottom: 5.6rem;
 }
+@media (max-width: 768px) {
+  .contact-info {
+    padding: 0 1.6rem;
+  }
+}
 .contact-info__item {
   display: flex;
   gap: 1.6rem;
@@ -1328,6 +1387,11 @@ button {
   margin: 0 auto;
   padding: 0 3rem;
   margin-bottom: 16.8rem;
+}
+@media (max-width: 768px) {
+  .restaurant-events {
+    padding: 0 1.6rem;
+  }
 }
 @media (max-width: 1024px) {
   .restaurant-events {
@@ -1414,6 +1478,11 @@ button {
   grid-template-columns: 65% 35%;
   display: none;
   opacity: 0;
+}
+@media (max-width: 768px) {
+  .rooms {
+    padding: 0 1.6rem;
+  }
 }
 @media (max-width: 1024px) {
   .rooms {
@@ -1508,6 +1577,11 @@ button {
   display: none;
   opacity: 0;
 }
+@media (max-width: 768px) {
+  .accomodation-studio {
+    padding: 0 1.6rem;
+  }
+}
 @media (max-width: 1024px) {
   .accomodation-studio {
     margin-bottom: 13.6rem;
@@ -1572,6 +1646,11 @@ button {
   margin: 0 auto;
   padding: 0 3rem;
   margin-bottom: 16.8rem;
+}
+@media (max-width: 768px) {
+  .accomodation-info {
+    padding: 0 1.6rem;
+  }
 }
 @media (max-width: 1024px) {
   .accomodation-info {
