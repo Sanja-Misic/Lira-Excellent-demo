@@ -185,9 +185,8 @@ const nextSlide = slide => {
   if (i >= slide.length) {
     i = 0;
   }
-
-  console.log(i);
 };
+
 const prevSlide = slide => {
   for (let j = 0; j < slide.length; j++) {
     slide[j].classList.remove('slide-active');
@@ -244,19 +243,18 @@ prevBtns.forEach(btn => {
 //   nextSlide(slideStudio5);
 // });
 
-// console.log();
-// setInterval(function () {
-//   nextSlide(slide12);
-// }, 3000);
-// setInterval(function () {
-//   nextSlide(slide3);
-// }, 3000);
-// setInterval(function () {
-//   nextSlide(slide4);
-// }, 3000);
-// setInterval(function () {
-//   nextSlide(slide5);
-// }, 3000);
+setInterval(function () {
+  nextSlide(slide12);
+}, 3000);
+setInterval(function () {
+  nextSlide(slide3);
+}, 3000);
+setInterval(function () {
+  nextSlide(slide4);
+}, 3000);
+setInterval(function () {
+  nextSlide(slide5);
+}, 3000);
 // setInterval(function () {
 //   nextSlide(slideStudio4);
 // }, 4000);

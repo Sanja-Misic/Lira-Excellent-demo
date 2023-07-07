@@ -24,9 +24,6 @@
     display: grid;
   }
 
-  &-without-mark {
-    grid-template-columns: 100% 0%;
-  }
   &__wrapper {
     display: flex;
     flex-direction: column;
