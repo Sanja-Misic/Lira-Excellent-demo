@@ -846,7 +846,7 @@ button {
   width: 100%;
   height: 85vh;
   margin-bottom: 16.8rem;
-  background-image: linear-gradient(90deg, #fefcf8 0.3%, transparent 60%), url(../img/home/Home-hero-img.jpeg);
+  background-image: linear-gradient(90deg, #fefcf8 0.3%, transparent 60%), url(../img/home/Home-hero-img.jpg);
   background-size: cover;
 }
 @media (max-width: 1024px) {
@@ -1235,7 +1235,7 @@ button {
   }
 }
 .contact-hero__img {
-  background-image: url(../img/contact/contact-hero.png);
+  background-image: url(../img/contact/contact-hero.jpg);
 }
 
 .contact {
@@ -1461,7 +1461,7 @@ button {
   }
 }
 .accomodation-hero__img {
-  background-image: url(../img/accomodation/accomodation-hero.png);
+  background-image: url(../img/accomodation/accomodation-hero.jpg);
 }
 
 .accomodation-about-hidden {
@@ -1515,7 +1515,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
-  margin-right: 3.4rem;
 }
 .rooms__price-cta {
   display: flex;
@@ -1531,6 +1530,7 @@ button {
   color: #fefcf8;
   text-align: center;
   padding: 3.2rem 3.2rem;
+  margin-left: 3.4rem;
 }
 .rooms__mark-heading {
   font-size: 2rem;
