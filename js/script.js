@@ -242,19 +242,29 @@ prevBtns.forEach(btn => {
 // nextBtnStudio5.addEventListener('click', function () {
 //   nextSlide(slideStudio5);
 // });
+if (window.location.pathname === '/accommodation') {
+  if (doubleRoomContainer.classList.contains('rooms-show')) {
+    setInterval(function () {
+      nextSlide(slide12);
+    }, 3000);
+  } else if (tripleRoomContainer.classList.contains('rooms-show')) {
+    setInterval(function () {
+      nextSlide(slide3);
+    }, 3000);
+  } else if (fourRoomContainer.classList.contains('rooms-show')) {
+    setInterval(function () {
+      nextSlide(slide4);
+    }, 3000);
+  } else if (fiveRoomContainer.classList.contains('rooms-show')) {
+    setInterval(function () {
+      nextSlide(slide5);
+    }, 3000);
+  }
+}
 
-setInterval(function () {
-  nextSlide(slide12);
-}, 3000);
-setInterval(function () {
-  nextSlide(slide3);
-}, 3000);
-setInterval(function () {
-  nextSlide(slide4);
-}, 3000);
-setInterval(function () {
-  nextSlide(slide5);
-}, 3000);
+// setInterval(function () {
+//   nextSlide(slide5);
+// }, 3000);
 // setInterval(function () {
 //   nextSlide(slideStudio4);
 // }, 4000);
