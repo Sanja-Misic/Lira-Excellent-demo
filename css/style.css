@@ -631,6 +631,7 @@ button {
 @media (max-width: 1024px) {
   .heading-secondary-wrapper {
     margin-bottom: 6.4rem;
+    padding-top: 7.2rem;
   }
 }
 .media {
