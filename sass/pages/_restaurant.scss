@@ -2,6 +2,12 @@
   background-image: url(../img/restaurant/img-restaurant-hero.jpg);
 }
 
+@media (max-width: 530px) {
+  .restaurant-hero__img {
+    background-image: url(../img/restaurant/img-restaurant-hero-mob.jpg);
+  }
+}
+
 .restaurant-events {
   display: flex;
   align-items: center;

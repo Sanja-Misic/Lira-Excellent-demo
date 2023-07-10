@@ -1259,6 +1259,11 @@ button {
   background-image: url(../img/contact/contact-hero.jpg);
 }
 
+@media (max-width: 530px) {
+  .contact-hero__img {
+    background-image: url(../img/contact/img-contact-hero-mob.jpg);
+  }
+}
 .contact {
   max-width: 128rem;
   width: 100%;
@@ -1399,6 +1404,11 @@ button {
   background-image: url(../img/restaurant/img-restaurant-hero.jpg);
 }
 
+@media (max-width: 530px) {
+  .restaurant-hero__img {
+    background-image: url(../img/restaurant/img-restaurant-hero-mob.jpg);
+  }
+}
 .restaurant-events {
   display: flex;
   align-items: center;
@@ -1485,6 +1495,11 @@ button {
   background-image: url(../img/accomodation/accomodation-hero.jpg);
 }
 
+@media (max-width: 530px) {
+  .accomodation-hero__img {
+    background-image: url(../img/accomodation/img-accomodation-hero-mob.jpg);
+  }
+}
 .accomodation-about-hidden {
   opacity: 0;
   display: none;
