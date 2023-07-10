@@ -90,7 +90,6 @@ const doubleRoomBtn = document.querySelector('.double-room');
 const tripleRoomBtn = document.querySelector('.triple-room');
 const fourRoomBtn = document.querySelector('.four-bed-room');
 const fiveRoomBtn = document.querySelector('.five-bed-room');
-const studioRoomBtn = document.querySelector('.studio-room');
 
 const accomodationContainer = document.querySelector('.accomodation-about');
 const doubleRoomContainer = document.querySelector('.double-room-container');
@@ -99,27 +98,19 @@ const fourRoomContainer = document.querySelector('.four-bed-room-container');
 const fiveRoomContainer = document.querySelector('.five-bed-room-container');
 const studioRoomContainer = document.querySelector('.accomodation-studio');
 
-const roomBtns = [
-  doubleRoomBtn,
-  tripleRoomBtn,
-  fourRoomBtn,
-  fiveRoomBtn,
-  studioRoomBtn,
-];
+const roomBtns = [doubleRoomBtn, tripleRoomBtn, fourRoomBtn, fiveRoomBtn];
 
 const roomContainers = [
   doubleRoomContainer,
   tripleRoomContainer,
   fourRoomContainer,
   fiveRoomContainer,
-  studioRoomContainer,
 ];
 
 roomBtns.forEach(btn => {
   if (btn !== null) {
     btn.addEventListener('click', function () {
       accomodationContainer.classList.add('accomodation-about-hidden');
-      studioRoomContainer.classList.remove('accomodation-studio-show');
 
       roomBtns.forEach(otherBtn => {
         if (otherBtn !== btn) {
@@ -148,10 +139,6 @@ roomBtns.forEach(btn => {
           fiveRoomContainer.classList.add('rooms-show');
           btn.classList.add('secondary-nav-item-clicked');
           break;
-        case studioRoomBtn:
-          studioRoomContainer.classList.add('accomodation-studio-show');
-          btn.classList.add('secondary-nav-item-clicked');
-          break;
       }
     });
   }
@@ -160,17 +147,10 @@ roomBtns.forEach(btn => {
 // ACCOMODATION IMAGES SLIDER
 const nextBtns = document.querySelectorAll('.next');
 const prevBtns = document.querySelectorAll('.prev');
-const nextBtnStudio4 = document.querySelector('.next-btn-studio-4');
-const prevBtnStudio4 = document.querySelector('.prev-btn-studio-4');
-const nextBtnStudio5 = document.querySelector('.next-btn-studio-5');
-const prevBtnStudio5 = document.querySelector('.prev-btn-studio-5');
 const slide12 = document.querySelectorAll('.slide12');
 const slide3 = document.querySelectorAll('.slide3');
 const slide4 = document.querySelectorAll('.slide4');
 const slide5 = document.querySelectorAll('.slide5');
-const slideStudio4 = document.querySelectorAll('.slide-studio-4');
-const slideStudio5 = document.querySelectorAll('.slide-studio-5');
-const sliderDots = document.querySelectorAll('.dot');
 
 let i = 0;
 
