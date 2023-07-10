@@ -867,7 +867,7 @@ button {
   width: 100%;
   height: 85vh;
   margin-bottom: 16.8rem;
-  background-image: linear-gradient(90deg, #fefcf8 0.3%, transparent 60%), url(../img/home/Home-hero-img.jpg);
+  background-image: linear-gradient(90deg, #fefcf8 0.3%, transparent 60%), url(../img/home/home-hero-img.jpg);
   background-size: cover;
 }
 @media (max-width: 1024px) {
