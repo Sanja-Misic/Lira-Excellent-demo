@@ -430,7 +430,7 @@ button {
 }
 .contact__form-input:focus {
   outline: none;
-  border: 2px solid #3d5b35;
+  border: 2px solid #63553f;
   background-color: transparent;
 }
 
@@ -474,11 +474,11 @@ button {
   width: fit-content;
   text-transform: uppercase;
   color: #fefcf8;
-  background-color: #3d5b35;
+  background-color: #63553f;
   border-radius: 3rem;
 }
 .hero-button:hover, .hero-button:active {
-  background-color: #687c63;
+  background-color: #786951;
 }
 
 @media (max-width: 1024px) {
@@ -513,12 +513,12 @@ button {
   font-size: 1.6rem;
   text-transform: uppercase;
   color: #fefcf8;
-  background-color: #3d5b35;
+  background-color: #63553f;
   border-radius: 3rem;
   width: fit-content;
 }
 .contact__form-button:hover {
-  background-color: #687c63;
+  background-color: #786951;
 }
 
 @media (max-width: 425px) {
@@ -1068,7 +1068,7 @@ button {
 .offer__cards-item {
   padding: 8rem 1.6rem;
   width: 100%;
-  border: 1px solid #3d5b35;
+  border: 1px solid #63553f;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
