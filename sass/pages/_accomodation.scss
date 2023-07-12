@@ -8,10 +8,6 @@
   }
 }
 
-// .accomodation-about {
-//   opacity: 1;
-//   transition: opacity 5s;
-// }
 .accomodation-about-hidden {
   opacity: 0;
   display: none;
@@ -23,7 +19,6 @@
   grid-template-columns: 65% 35%;
   display: none;
   opacity: 0;
-  // transition: opacity 5s;
 
   &-show {
     opacity: 1;
@@ -34,7 +29,6 @@
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
-    // margin-right: 3.4rem;
   }
 
   &__price-cta {
@@ -47,12 +41,6 @@
     display: flex;
     justify-content: space-between;
   }
-
-  // &__img {
-  //   width: 100%;
-  //   height: 30rem;
-  //   box-shadow: $box-shadow;
-  // }
 
   &__mark {
     background-color: $main-black-color;

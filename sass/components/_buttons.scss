@@ -1,4 +1,3 @@
-//sredi ih kao linkove link active, visited hover vidi koji je redosled
 .cta-button {
   &:link,
   &:visited {
@@ -39,9 +38,7 @@
   .hero-button {
     &:link,
     &:visited {
-      // padding: 1.6rem 3.2rem;
       font-size: 1.3rem;
-      // border-radius: 3rem;
     }
   }
 }
@@ -75,11 +72,6 @@
   .footer__btn {
     &:link,
     &:visited {
-      // padding: 0rem 0.8rem;
-      // font-size: 1.3rem;
-      // color: $main-white-color;
-      // background-color: $main-gold-color;
-      // border-radius: 3rem;
       transform: translateX(0rem);
     }
   }

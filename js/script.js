@@ -209,19 +209,6 @@ prevBtns.forEach(btn => {
   });
 });
 
-// /////////////// stavi da ako ta stranica ima show klasu onda ovo
-// prevBtnStudio4.addEventListener('click', function () {
-//   prevSlide(slideStudio4);
-// });
-// nextBtnStudio4.addEventListener('click', function () {
-//   nextSlide(slideStudio4);
-// });
-// prevBtnStudio5.addEventListener('click', function () {
-//   prevSlide(slideStudio5);
-// });
-// nextBtnStudio5.addEventListener('click', function () {
-//   nextSlide(slideStudio5);
-// });
 if (window.location.pathname === '/accommodation') {
   if (doubleRoomContainer.classList.contains('rooms-show')) {
     setInterval(function () {
@@ -241,16 +228,6 @@ if (window.location.pathname === '/accommodation') {
     }, 3000);
   }
 }
-
-// setInterval(function () {
-//   nextSlide(slide5);
-// }, 3000);
-// setInterval(function () {
-//   nextSlide(slideStudio4);
-// }, 4000);
-// setInterval(function () {
-//   nextSlide(slideStudio5);
-// }, 3000);
 
 // BACK TO TOP BUTTON
 const backToTopBtn = document.querySelector('.back-to-top-btn');

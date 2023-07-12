@@ -16,7 +16,6 @@
 
   &-active {
     visibility: visible;
-    // display: block;
     opacity: 1;
   }
 }
@@ -28,7 +27,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // top: 0%;
   font-size: 3rem;
   color: $main-white-color;
 }

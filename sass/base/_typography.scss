@@ -9,12 +9,6 @@ body {
   }
 }
 
-// @media (max-width: 768px) {
-//   body {
-//     font-size: 1rem;
-//   }
-// }
-
 button {
   font-family: inherit;
 }
@@ -74,14 +68,10 @@ button {
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
-  // padding: 2rem;
 }
 
 @media (max-width: 530px) {
   .heading-fourth {
-    // text-align: center;
     font-size: 1.6rem;
-    // font-weight: 600;
-    // // padding: 2rem;
   }
 }
