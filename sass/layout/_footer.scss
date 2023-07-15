@@ -66,6 +66,10 @@
     color: $main-white-color;
     border-top: 2px solid $main-gold-color;
   }
+  &__developed-by {
+    color: $main-white-color;
+    text-decoration: underline;
+  }
 }
 
 @media (max-width: 1024px) {

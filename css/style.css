@@ -380,6 +380,10 @@ button {
   color: #fefcf8;
   border-top: 2px solid #b09e80;
 }
+.footer__developed-by {
+  color: #fefcf8;
+  text-decoration: underline;
+}
 
 @media (max-width: 1024px) {
   .footer__wrapper {
