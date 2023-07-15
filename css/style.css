@@ -1192,6 +1192,7 @@ button {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr 1fr;
+  margin-bottom: 0.8rem;
 }
 .turists__item {
   display: flex;
@@ -1225,6 +1226,12 @@ button {
   justify-content: center;
   gap: 3.2rem;
   padding: 0 3.2rem;
+}
+.turists__credits {
+  font-size: 1.02rem;
+}
+.turists__credits-link:link, .turists__credits-link:active, .turists__credits-link:hover, .turists__credits-link:visited {
+  color: #22211f;
 }
 
 @media (max-width: 1024px) {

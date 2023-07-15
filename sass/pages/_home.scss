@@ -258,6 +258,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 0.8rem;
   }
   &__item {
     display: flex;
@@ -296,6 +297,16 @@
       justify-content: center;
       gap: 3.2rem;
       padding: 0 3.2rem;
+    }
+  }
+  &__credits {
+    font-size: 1.02rem;
+
+    &-link:link,
+    &-link:active,
+    &-link:hover,
+    &-link:visited {
+      color: $main-black-color;
     }
   }
 }
